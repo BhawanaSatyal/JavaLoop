@@ -3,4 +3,7 @@
 
 
 public class Any10Numbers {
+    public static void main(String[] args) {
+        System.out.println("hhh");
+    }
 }
