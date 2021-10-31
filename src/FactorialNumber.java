@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class FactorialNumber {
 
-    public static void main(String[] args) {
-        int number;
-        System.out.println("Enter the number: ");
-        Scanner scan = new Scanner(System.in);
-        number = scan.nextInt();
-        scan.close();
+    public static void main(String[] args) { // main method
+        int a;
+        System.out.println("Enter the Number: "); // allows user to input number
+        Scanner scan = new Scanner(System.in); // an object of Scanner class
+        a = scan.nextInt();
+
         long fact = 1;
         int i = 1;
-        while(i<=number)
+        while(i<=a)
         {
-            fact = fact * i; i++;
+            fact = fact * i; i++; // condition
         }
-        System.out.println("Factorial of "+number+" is: "+fact);
+        System.out.println("Factorial of "+a+" is: "+fact); // output
     }
 }

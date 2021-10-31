@@ -3,7 +3,7 @@
 public class NaturalNumber {
 
 
-        public static void main(String[] args)
+        public static void main(String[] args)// main method
         {
 
             int num = 100, sum = 0;
@@ -14,7 +14,7 @@ public class NaturalNumber {
                 sum += i;
             }
 
-            System.out.println("Sum = " + sum);
+            System.out.println("Sum = " + sum);// output
         }
     }
 

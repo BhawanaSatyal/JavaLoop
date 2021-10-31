@@ -4,21 +4,22 @@ import java.util.Scanner;
 
 public class ReverseNumber {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // main method
         int number = 0;
-        int reverseNumber = 0;
-        Scanner scan = new Scanner(System.in);
-        System.out.println( "Enter Number:");
-        int num = scan.nextInt();
+        int a = 0;
+        int b;
+        Scanner scan = new Scanner(System.in);// an object of Scanner class
+        System.out.println( "Enter Number:");// allows user to enter number
+        b = scan.nextInt();
 
-        for (;num !=0;)
+        for (;b !=0;)
         {
-            reverseNumber = reverseNumber * 10;
-            reverseNumber = reverseNumber + num%10;
-            num = num/10;
+            a = a * 10;
+            a = a + b%10;
+            b = b/10;
         }
 
-        System.out.println("Reverse of specified Number is: "+reverseNumber);
+        System.out.println("Reverse Number is: " +a);// output
     }
 
 }

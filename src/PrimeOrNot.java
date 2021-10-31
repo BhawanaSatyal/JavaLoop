@@ -3,23 +3,23 @@
 import java.util.Scanner;
 
 public class PrimeOrNot {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // main method
         int num;
-        boolean isPrime = false;
+        boolean a = false;
         Scanner scan = new Scanner(System.in); //create a scanner object for input
-        System.out.print("Enter a number: ");
+        System.out.print("Enter a number: ");// allows user to input number
         num = scan.nextInt();
 
         for (int i = 2; i <= num / 2; ++i) // condition for nonprime number
         {
             if (num % i == 0) {
-                isPrime = true;
+                a = true;
                 break;
             }
         }
-        if (!isPrime)
-            System.out.println(num + " is a Prime number.");
+        if (!a)
+            System.out.println(num + " is a Prime number.");// output when condition is met
         else
-            System.out.println(num + " is not a Prime number.");
+            System.out.println(num + " is not a Prime number.");// output when condition is met
     }
 }
