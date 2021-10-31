@@ -9,8 +9,9 @@ import java.util.Scanner;
 public class Calculator {
 
     public static void main(String[] args) { // main method
-        double x, y, z = 0;
         char symbol;
+        double x, y, z = 0;
+
         Scanner input = new Scanner(System.in); // an object of Scanner class
         System.out.println("Enter first number"); // allows user to input number
         x  = input.nextDouble();
